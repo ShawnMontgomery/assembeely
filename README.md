@@ -4,10 +4,14 @@
 Assembeely is an effort to compare read error rates for DNA sequencing with de novo assembly. 
 
 ## Installation
-To run Assembeely, one needs only have [Singularity](https://sylabs.io/guides/3.0/user-guide/installation.html) installed. Once installed, one can run the program with
+To run Assembeely, one needs to have [Singularity](https://sylabs.io/guides/3.0/user-guide/installation.html) installed. Once installed, one can build the program with
 ```
-./assembeely
+sudo singularity build assembeely.sif assembeely.def
 ``` 
+And run the program with
+```
+./assembeely.sif
+```
 
 To uncover the specifics of each step, one could manually run the steps in `workflow.sh` and then `main.py`
 
